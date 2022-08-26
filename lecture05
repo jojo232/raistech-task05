@@ -1,0 +1,23 @@
+# EC2にサンプルアプリデプロイ
+<img width="1287" alt="スクリーンショット 2022-08-26 17 33 48" src="https://user-images.githubusercontent.com/65487059/186877131-dc7d7820-895b-4ddd-b406-22c3f3e3f06a.png">
+
+# ELB追加
+<img width="1088" alt="スクリーンショット 2022-08-26 17 30 30" src="https://user-images.githubusercontent.com/65487059/186877453-ae939b2a-2199-4df6-bdd1-976c0af0b76f.png">
+<img width="1041" alt="スクリーンショット 2022-08-26 17 37 30" src="https://user-images.githubusercontent.com/65487059/186877502-41185233-c7bd-421e-b113-1010a542c717.png">
+
+# S3追加
+<img width="1053" alt="スクリーンショット 2022-08-26 17 27 56" src="https://user-images.githubusercontent.com/65487059/186877768-dc779c55-c1c7-4b83-8afd-f4e5b7b74df1.png">
+
+# 構成図
+
+
+
+# 反省
+1. Webサーバーを使用する予定が、思った以上にS3に苦戦してアプリケーションサーバーで課題提出する形になった。<br>
+2. S3にハマり、自分でググりながら進めようと思ったが進まなかった為、過去動画見てマネしてしまった。<br>
+3. EDITOR=vim bin/rails credentials:edit でバケット名の記載がミスっていた。<br>
+※bucket: バケット名　→　active_storage_bucket_name:　バケット名　修正<br>
+4. S3のCORSの設定<br>
+<img width="430" alt="スクリーンショット 2022-08-26 19 02 49" src="https://user-images.githubusercontent.com/65487059/186880393-69a53f29-dea9-4b1b-9a30-56534039c061.png">
+※ここの設定もあまり理解できていないので後日復習して理解を深めたい。
+
